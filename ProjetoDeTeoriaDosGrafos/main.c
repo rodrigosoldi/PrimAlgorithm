@@ -10,17 +10,11 @@
 #include <stdlib.h>
 #include <limits.h>
 
+int countTeste = 0;
+
 void removeColumn(int, int, int, int **);
-void allocAll(int, int, int **, int **, int *);
 void prim(int *, int, int, int **, int **);
 int count(int *, int);
-
-//int *franjas;
-//int **matrixU;
-//int **matrixFinal;
-//int countRows = 8;
-int countTeste = 0;
-//int countColumns = 8;
 
 int main(int argc, char **argv){
     
@@ -38,7 +32,6 @@ int main(int argc, char **argv){
     
     int *tamanhoLinha = malloc(countRows * countColumns * sizeof(int));
     
-    // Tamanho MatrixU
     matrixU = malloc(countRows * sizeof(int *));
     
     int x;
